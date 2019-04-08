@@ -1,0 +1,29 @@
+<view>
+  {{a+b}} + {{c}} + {{d}}
+</view>
+<view>
+  你好 {{message}}
+</view>
+
+<view wx:if="{{condition}}">结果为真 </view>
+
+<checkbox checked='true'>xx</checkbox>
+
+<view hidden='{{flag ? true:false}}'>Hidden </view>
+
+<view wx:if="{{a > 0}}"> "a>0"</view>
+
+<view>{{object.key}} && {{object.value}} && {{object.value2[0]}}</view>
+
+<view wx:for="{{[zero,1,2,3,4]}}">{{item}}</view>
+
+<template is="objectCombine" data="{{for:a,bar:b}}"></template>
+
+<template name="msgItem">
+  <view>
+    <text>{{index}}:{{msg}}</text>
+    <text>Time:{{time}}</text>
+  </view>
+</template>
+
+<template is="msgItem" data="{{a}}">111</template>

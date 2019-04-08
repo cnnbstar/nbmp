@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序测试",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "borderStyle":"black",
+    "position":"top",
+    "selectedColor":"#333",
+    "color":"#444",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/logs/logs",
+        "text":"日志"
+      },
+      {
+        "pagePath":"pages/test/test",
+        "text":"测试"
+      }
+    ]
+  },
+  "networkTimeout":{
+    "request":10000,
+    "downloadFile":10000
+  },
+  "debug":true
+}

@@ -1,0 +1,20 @@
+Page({
+  data:{
+    a:1,
+    b:2,
+    c:3,
+    d:100,
+    message:'Hello Johnny',
+    condition:true,
+    flag:false,
+    object:{
+      key:'key_hello',
+      value:'value_world',
+      value2:['达子','保德']
+    },
+    zero:0,
+    index:1,
+    msg:'hello,xxx',
+    time:'2019-04-08'
+  }
+})
